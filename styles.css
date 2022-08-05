@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background: plum;
+    text-align: center;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)), url(images/kayak1);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
