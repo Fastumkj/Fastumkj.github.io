@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: plum;
     text-align: center;
+<<<<<<< HEAD
 }
 .header{
     min-height: 100vh;
@@ -10,4 +11,6 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
+=======
+>>>>>>> f453520b80376762e4314504fddba4fd72a121e3
 }
