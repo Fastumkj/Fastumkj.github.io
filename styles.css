@@ -2,15 +2,25 @@ body {
     margin: 0;
     background: plum;
     text-align: center;
-<<<<<<< HEAD
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7)), url(images/kayak1);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-=======
->>>>>>> f453520b80376762e4314504fddba4fd72a121e3
+.container
+{
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+img
+{
+    float: left;
+    width: 480px;
+    height: 480px;
+    padding: 0 10px 0 0;
+}
+
+.text
+{
+    text-align: justify;
+    font-family: Verdana;
+
 }
