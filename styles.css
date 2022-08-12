@@ -1,75 +1,82 @@
+:root{
+    --background: rgba(0,214,170, 5);
+}
+
 body {
     margin: 0;
     background:honeydew;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
 
+ /* navigation styles start here */
 header{
-    background: #55d6aa;
-}
-
-header::after{          /* without this, the navbar won't have any colour */
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.logo {
-    float: left;
-}
-
-nav {
-    float: right;
-    padding: 15px 0;
-}
-
-nav ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 15px;
-
-    position: relative;
-}
-
-nav a {
-    color: #444;
-    text-decoration: none; /* underlined part for home/skills/education/contact */
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-nav a:hover{
-    color: #000;
-}
-
-nav a::before{      /*hover over the necessary pages*/
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color:rgb(45, 170, 242);
-
-    position: absolute;
-    top: -12;
-    width:0%;
-
-    transition:all ease-in-out 250ms;
-}
-
-nav a:hover::before {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999; /*ensure it's always on top of everything else*/
     width:100%;
 }
 
+.nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: inherit;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color:#000;
+    text-decoration: none; /* underlined part for home/skills/education/contact */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover { /* pseudo class */
+    color:blue;
+}
+
+input[type=checkbox]:checked ~ nav { /* ~ looks for any preceding[coming before] sibling, doesn't have to be immediately after*/
+    display: block;
+}
 
 .profile
 {
