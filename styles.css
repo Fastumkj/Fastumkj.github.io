@@ -39,8 +39,24 @@ header{
     height: 2px;
     width: 2em;
     border-radius: 2px;
-    position: inherit;
+    position: relative;
 }
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: ''; /*line needed becuz if not nth ever shows up */
+    position: absolute;
+}
+
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+
+
 
 nav {
     position: absolute;
@@ -49,7 +65,9 @@ nav {
     left: 0;
     background: var(--background);
     width: 100%;
-    display: none;
+    transform: scale(1, 0); /*scale(horizontal, vertical)*/
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -75,7 +93,7 @@ nav a:hover { /* pseudo class */
 }
 
 input[type=checkbox]:checked ~ nav { /* ~ looks for any preceding[coming before] sibling, doesn't have to be immediately after*/
-    display: block;
+    transform: scale(1, 1)
 }
 
 .profile
