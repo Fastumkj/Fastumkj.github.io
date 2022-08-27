@@ -56,8 +56,6 @@ header{
     top: 7px;
 }
 
-
-
 nav {
     position: absolute;
     text-align: left;
@@ -86,6 +84,8 @@ nav a {
     text-decoration: none; /* underlined part for home/skills/education/contact */
     font-size: 1.2rem;
     text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover { /* pseudo class */
@@ -94,6 +94,11 @@ nav a:hover { /* pseudo class */
 
 input[type=checkbox]:checked ~ nav { /* ~ looks for any preceding[coming before] sibling, doesn't have to be immediately after*/
     transform: scale(1, 1)
+}
+
+input[type=checkbox]:checked ~ nav a{ /* ~ looks for any preceding[coming before] sibling, doesn't have to be immediately after*/
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
 .profile
@@ -122,4 +127,38 @@ img
     text-align: left;
     color:black;
     font-family: 'Times New Roman';
+}
+
+@media screen and (max-wdith: 800px){
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr ; /*fr = fraction*/
+}
+
+.Logo {
+    grid-column: 2/3;
+}
+
+nav{
+    all: unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav li{
+    margin-left: 3em;
+    margin-bottom: 0;
+}
+
+nav a{
+    opacity: 1;
 }
