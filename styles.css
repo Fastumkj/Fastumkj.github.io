@@ -180,6 +180,9 @@ nav a{
         width:20%;
         padding-right: 450px;
     }
+    nav a{
+        font-size: 10%;
+    }
     header{
         width: 100%;
         font-size: 30%;
