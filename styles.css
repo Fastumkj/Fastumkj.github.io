@@ -176,6 +176,9 @@ nav a{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
+    .Logo{
+        font-size: 20%;
+    }
     nav ul {
         width:20%;
         padding-right: 450px;
