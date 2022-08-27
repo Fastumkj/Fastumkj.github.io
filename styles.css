@@ -144,24 +144,6 @@ img
     font-family: 'Times New Roman';
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 900px){
-    img{
-        float: left;
-        width: 30px;
-        height: 30px;
-        border-radius: 50px;
-    }
-    .text{
-        padding:70px;
-        width: 50%;
-    }
-    .rectangle{
-        padding:70px;
-        width: 50%;
-    }
-}
-
 header{
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr ; /*fr = fraction*/
@@ -190,4 +172,23 @@ nav li{
 
 nav a{
     opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px){
+    img{
+        float: left;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    .text{
+        padding:70px;
+        width: 50%;
+        font-size: 50%;
+    }
+    .rectangle{
+        padding:70px;
+        width: 50%;
+    }
 }
