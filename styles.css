@@ -176,6 +176,14 @@ nav a{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
+    nav ul {
+        width:20%;
+        padding-right: 450px;
+    }
+    header{
+        width: 100%;
+        font-size: 30%;
+    }
     img{
         float: left;
         width: 30px;
@@ -192,3 +200,4 @@ nav a{
         width: 50%;
     }
 }
+
