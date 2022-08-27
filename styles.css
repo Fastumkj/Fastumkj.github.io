@@ -145,7 +145,7 @@ img
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 900px){
     img{
         float: left;
         width: 30px;
@@ -153,10 +153,12 @@ img
         border-radius: 50px;
     }
     .text{
-        padding:150px;
+        padding:70px;
+        width: 50%;
     }
     .rectangle{
-        padding:150px;
+        padding:70px;
+        width: 50%;
     }
 }
 
