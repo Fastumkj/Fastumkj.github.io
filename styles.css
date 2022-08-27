@@ -118,10 +118,25 @@ img
 
 .text
 {
-    text-align: start;
+    text-align:justify;
     font-family: Verdana;
 }
 
+.rectangle{
+    width: 60%;
+    height: 300px;
+    background: rgba(72, 62, 63, 0.084);
+    opacity: 0.5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    margin-top: -50px;
+}
+.center{
+    font-size: 40px;
+}
 .toKnowMore
 {
     text-align: left;
@@ -129,8 +144,20 @@ img
     font-family: 'Times New Roman';
 }
 
-@media screen and (max-wdith: 800px){
-
+/* MEDIA QUERIES */
+@media screen and (max-width: 1920px){
+    img{
+        float: left;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    .text{
+        padding:150px;
+    }
+    .rectangle{
+        padding:150px;
+    }
 }
 
 header{
