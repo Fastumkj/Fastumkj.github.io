@@ -177,14 +177,14 @@ nav a{
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
     .Logo{
-        font-size: 20%;
+        font-size: 50%;
     }
     nav ul {
-        width:20%;
-        padding-right: 450px;
+        width:50%;
+        padding-right: 350px;
     }
     nav a{
-        font-size: 10%;
+        font-size: 40%;
     }
     header{
         width: 100%;
