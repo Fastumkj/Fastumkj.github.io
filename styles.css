@@ -139,20 +139,27 @@ img
     opacity: 1;
     border-radius: 20px;
     display: flex;
+    /*
     align-items: center;
     justify-content: center;
-    margin-right: 300px;
-    margin-top: 50px;
+    */
 }
 
-.center{
-    font-size: 40px;
-}
-.toKnowMore
+
+.More
 {
-    text-align: left;
+    color:rgb(7, 7, 7);
+    font-family: 'Times New Roman';
+    margin-left: 450px;
+}
+
+.Details 
+{
     color:purple;
     font-family: 'Times New Roman';
+    display:block;
+    padding: 15px;
+    cursor: pointer;
 }
 
 header{
