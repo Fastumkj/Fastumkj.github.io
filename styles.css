@@ -13,7 +13,7 @@ nav{
   background: #1b1b1b;
   width: 100%;
   padding: 10px;
-  z-index: 12;
+  z-index: 1;
 }
 nav .menu{
   max-width: 1400px;
@@ -54,14 +54,16 @@ nav .menu{
   color: white;
 }
 
+
 .img{
   background: url('images/winter.jpg')no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 100%; 
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .img::before{
   content: '';
   position: absolute;
@@ -69,6 +71,7 @@ nav .menu{
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .center{
   position: absolute;
   top: 52%;
@@ -79,18 +82,19 @@ nav .menu{
   text-align: center;
 }
 .center .title{
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 55px;
   font-weight: 600;
 }
 .center .sub_title{
   color: #fff;
-  font-size: 52px;
+  font-size: 20px;
   font-weight: 600;
 }
 .center .btns{
-  margin-top: 20px;
+  margin-top: 20px; /* create space between btns and titles*/
 }
+
 .center .btns button{
   height: 55px;
   width: 170px;
@@ -99,21 +103,35 @@ nav .menu{
   margin: 0 10px;
   border: 2px solid white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0 10px;
-  cursor: pointer;
+  cursor: pointer; /* mouse cursor to be displayed when pointing over an element. */
   outline: none;
   transition: all 0.3s ease;
 }
-.center .btns button:first-child{
-  color: #fff;
+
+.center .btns button:nth-child(1){
+  color: rgb(25, 0, 248);
   background: none;
 }
-.btns button:first-child:hover{
+.btns button:nth-child(1):hover{
   background: white;
-  color: black;
 }
-.center .btns button:last-child{
+
+.center .btns button:nth-child(2){
+  color: rgb(255, 0, 64);
+  background: none;
+}
+
+.btns button:nth-child(2):hover{
   background: white;
-  color: black;
+}
+
+.center .btns button:nth-child(3){
+  color: rgb(56, 232, 74);
+  background: none;
+}
+
+.btns button:nth-child(3):hover{
+  background: white;
 }
