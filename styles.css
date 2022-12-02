@@ -49,9 +49,57 @@ nav .menu{
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-.menu ul li a:hover{
-  background: rgb(198, 123, 205);
-  color: white;
+.menu ul li a:hover,
+.menu ul a.active{
+  background: none;
+  color: rgb(198, 123, 205);
+}
+
+.menu .menu-btn i{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#click{
+  display: none;
+}
+
+@media (max-width: 940px){
+  .menu ul{
+    position: fixed;
+    top: 80px;
+    left: -100%; /* SEE left portion of x percent */
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f062";
+  }
+
+  #click:checked ~ ul{ /* "~" is used to seelct all the second sequences which are precded by the firwst sequence */
+    /* "#" is used to select a specific element with a unique ID*/
+    left: 0%;
+  } 
+
+
+  .menu ul li{ /* put all text in the center */
+    margin: 40px 0;
+    text-align: center;
+  }
+  .menu ul li a{
+    font-size: 40px;
+    display: block; /* block element fills the entire line, nothing can be dispalyed on its left or right */
+  }
+
+  .menu .menu-btn i{
+    display: block;
+  }
 }
 
 
