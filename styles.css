@@ -78,16 +78,6 @@ nav .menu{
     transition: all 0.3s ease;
   }
 
-  #click:checked ~ .menu-btn i:before{
-    content: "\f062";
-  }
-
-  #click:checked ~ ul{ /* "~" is used to seelct all the second sequences which are precded by the firwst sequence */
-    /* "#" is used to select a specific element with a unique ID*/
-    left: 0%;
-  } 
-
-
   .menu ul li{ /* put all text in the center */
     margin: 40px 0;
     text-align: center;
@@ -100,6 +90,16 @@ nav .menu{
   .menu .menu-btn i{
     display: block;
   }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f062";
+  }
+
+  #click:checked ~ ul{ /* "~" is used to seelct all the second sequences which are precded by the firwst sequence */
+    /* "#" is used to select a specific element with a unique ID*/
+    left: 0%;
+  } 
+
 }
 
 
