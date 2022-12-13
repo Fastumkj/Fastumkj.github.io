@@ -66,6 +66,7 @@ nav .menu{
   display: none;
 }
 
+
 @media (max-width: 940px){
   .menu ul{
     position: fixed;
