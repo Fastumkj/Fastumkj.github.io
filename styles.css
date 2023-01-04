@@ -252,7 +252,7 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.mycontact {
   text-align: center;
   margin: auto;
   max-width: 500px;
