@@ -11,9 +11,9 @@
 <body>
 
 <?php //storing name, email, and message
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST["name"];
+$visitor_email = $_POST["email"];
+$message = $_POST["subject"];
 
 $email_from = 'fastumkj@hotmail.com';
 
