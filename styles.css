@@ -8,8 +8,10 @@
   color: #674;
   background: #fff;
 }
+
 nav{
   position: fixed;
+  top: 0px;
   background: #1b1b1b;
   width: 100%;
   padding: 10px;
@@ -183,4 +185,79 @@ nav .menu{
 
 .btns button:nth-child(3):hover{
   background: white;
+}
+
+/*skills.html*/
+.mytabs{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 25px;
+}
+.mytabs input[type="radio"]{
+  display:none;
+}
+.mytabs label{
+  border-radius: 15px;
+  padding: 25px;
+  background:rgb(74, 72, 73);
+}
+
+.mytabs .tab{
+  width: 100%;
+  padding: 20px;
+  background:white;
+  order: 1; /* flex box */
+  display: none;
+}
+.mytabs .tab h2{
+  font-size: 2em;
+}
+
+.mytabs input[type ='radio']:checked + label + .tab{ /* "+" sign is going to look for the next element (label, then tab)*/
+  display: block;
+}
+
+.mytabs input[type='radio']:checked + label {
+  background:white;
+}
+
+/*contact.html*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea{
+  max-width: 400px; /* Full width */
+  padding: 4px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 12px; /* Bottom margin */
+  resize: horizontal /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: #995050;
+  padding: 50px;
 }

@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Skills</title>
+    <title>Connect</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -11,7 +11,7 @@
 <body>
     <nav>
       <div class="menu">
-        <div class="logo"> <a href="#">Skills</a></div>
+        <div class="logo"> <a href="#">Contact</a></div>
         <input type="checkbox" id="click">
         <label for ="click" class="menu-btn">
           <i class="fas fa-bars"></i> <!-- to add icon for the lists-->
@@ -23,10 +23,56 @@
         </ul>
       </div>
     </nav>
-    <div class="img"></div>
-    <div class="center">
-      <div class="btns">
+    
+    <div class="mycontact">
+      <div class="container">
+        <h1>Let's Connect!</h1>
+        <form action="/action_page.php">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="singapore">Singapore</option>
+            <option value="others">Others</option>
+          </select>
+
+          
+          <label for ="email">Email</label>
+          <input email ="email" type="email" id="email" class="form" placeholder="Your Email:" required>
+          <br>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
       </div>
+
     </div>
 </body>
 </html>
+
+
+
+<!--
+    <div class="contactform">
+      <form id="contactform" method ="post" action="">
+        <label for ="name">Name</label>
+        <input name ="name" type="text" id="name" class="form" placeholder="Your Name:" required>
+        <br>
+
+        <label for ="email">Email</label>
+        <input email ="email" type="email" id="email" class="form" placeholder="Your Email:" required>
+        <br>
+        
+          <label for ="message">Message</label>
+          <textarea name="message" id = "message" class="form" placeholder="Message:" row="4" required></textarea><br>
+
+          <input type="submit" class="form submit" value="SEND MESSAGE">
+      
+        </form>
+
+    </div>
+
+
+-->
