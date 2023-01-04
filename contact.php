@@ -1,17 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Connect</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-
-<body>
-
 <?php //storing name, email, and message
-if (!empty($_POST)) {
+/* if (!empty($_POST)) {
     $name = $_POST["name"];
     $visitor_email = $_POST["email"];
     $message = $_POST["subject"];
@@ -20,9 +8,9 @@ if (!empty($_POST)) {
 
     $email_subject = 'Message from your website!';
 
-    /*$email_body = "User Name: $name.\n".
-    "User Email: $visitor_email .\n"
-    "User Message: $message .\n";*/
+    //$email_body = "User Name: $name.\n".
+    //"User Email: $visitor_email .\n"
+    //"User Message: $message .\n";
 
     $email_body = "User Name:" . $name .
         "\n User Email:" . $visitor_email .
@@ -38,31 +26,32 @@ if (!empty($_POST)) {
     mail($to, $email_subject, $email_body, $headers);
 
     header("Location: contact.html");
-}
-?>
+} */
 
-<div class="mycontact">
-      <h1>Let's Connect!</h1>
-      <form id = "mycontact" method = "post" action="contact.php">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
+    // Get data from form 
+    $name = $_POST['name'];
+    $email= $_POST['email'];
+    $message= $_POST['message'];
     
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="singapore">Singapore</option>
-          <option value="others">Others</option>
-        </select>
-
-        
-        <label for ="email">Email</label>
-        <input email ="email" type="email" id="email" class="form" placeholder="Your Email:" required>
-        <br>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+    $to = "kahjyun@hotmail.com";
+    $subject = "This is the subject line";
     
-        <input type="submit" value="Submit">
-      </form>
-</div>
+    // The following text will be sent
+    // Name = user entered name
+    // Email = user entered email
+    // Message = user entered message
+    $txt ="Name = ". $name . "\r\n  Email = "
+        . $email . "\r\n Message =" . $message;
+    
+    $headers = "From: noreply@demosite.com" . "\r\n" .
+                "CC: somebodyelse@example.com";
+    if($email != NULL) {
+        mail($to, $subject, $txt, $headers);
+    }
+    
+    // Redirect to
+    header("Location:contact.html");
 
-</body>
-</html>
+?> 
+
+
