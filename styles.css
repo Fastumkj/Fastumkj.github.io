@@ -224,10 +224,14 @@ nav .menu{
 }
 
 /*contact.html*/
+.mycontact label{
+  padding:15px;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea{
   max-width: 400px; /* Full width */
-  padding: 4px; /* Some padding */ 
+  padding: 5px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -255,7 +259,7 @@ input[type=submit]:hover {
 .mycontact {
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 550px;
   margin-top: 100px;
   border-radius: 5px;
   background-color: #995050;
