@@ -237,7 +237,7 @@ input[type=text], input[type=email], select, textarea{
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 5px; /* Add a top margin */
   margin-bottom: 12px; /* Bottom margin */
-  resize: horizontal /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
