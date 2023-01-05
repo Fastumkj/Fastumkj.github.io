@@ -191,28 +191,36 @@ nav .menu{
 .mytabs{
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 700px;
   margin: 100px auto;
   padding: 25px;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 .mytabs input[type="radio"]{
   display:none;
 }
 .mytabs label{
-  border-radius: 15px;
   padding: 25px;
-  background:rgb(74, 72, 73);
+  background:rgb(218, 122, 170);
 }
 
 .mytabs .tab{
   width: 100%;
   padding: 20px;
-  background:white;
+  background:rgb(111, 204, 214);
   order: 1; /* flex box */
   display: none;
+  border-radius: 5px;
 }
 .mytabs .tab h2{
   font-size: 2em;
+}
+.mytabs .tab h3{
+  font-size: 1em;
+}
+.mytabs .tab p{
+  font-weight: normal;
 }
 
 .mytabs input[type ='radio']:checked + label + .tab{ /* "+" sign is going to look for the next element (label, then tab)*/
