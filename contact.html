@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
 </head>
 
 <body>
@@ -31,23 +32,32 @@
         <input type="hidden" name="_subject" value="New email!!">
         
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
+        <input type="text" id="name" name="name" placeholder="Your name.." required>
         <label for="country">Country</label>
+
         <select id="country" name="country">
           <option value="singapore">Singapore</option>
           <option value="others">Others</option>
         </select>
+
         <label for ="email">Email</label>
-        <input email ="email" type="email" id="email" class="form" placeholder="Your Email:" required>
+        <input email ="email" type="email" id="email" class="form" placeholder="Your Email:" 
+        pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Looks like you forgot something" required>
         <br>
+
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." required ></textarea>
     
         <input type="submit" value="Submit">
       </form>
     </div>
 
+    <div class="Social-media">
+      <a href="https://www.linkedin.com/in/pung-kahjyun/"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+      <a href="https://github.com/fastumkj"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+      <a href="https://t.me/kahjyun"><font color="#007cc4"><i class="fab fa-telegram"></i></a></font>
     </div>
+
 </body>
 </html>
 
