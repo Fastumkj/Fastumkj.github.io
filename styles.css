@@ -311,11 +311,11 @@ input[type=submit]:hover {
 }
 
 a:hover .fa-linkedin{
-  color: #0033ff;
+  color: #0072b1;
 }
 a:hover .fa-github{
-  color: #0c0d0d;
+  color: #171515
 }
 a:hover .fa-telegram{
-  color: #5ac5db;
+  color: #229ED9
 }
