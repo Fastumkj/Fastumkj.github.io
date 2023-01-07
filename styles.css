@@ -294,9 +294,9 @@ input[type=submit]:hover {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 6px 6px 10px -1px rgba(0,124,196,0.15),
-              -6px -6px 10px -1px rgba(255,255,255,0.7);
-  border: 1px solid rgba(0, 124, 196, 0);
+  box-shadow: 6px 6px 10px -1px rgba(190, 237, 5, 0.844),
+              -6px -6px 10px -1px rgba(179, 65, 65, 0.7);
+  border: 1px solid rgba(17, 154, 233, 0);
   transition: transform 0.5s
 }
 
@@ -311,11 +311,11 @@ input[type=submit]:hover {
 }
 
 a:hover .fa-linkedin{
-  color: #0072b1;
+  color: #0026ff;
 }
 a:hover .fa-github{
   color: #171515
 }
 a:hover .fa-telegram{
-  color: #229ED9
+  color: #00aeff
 }
