@@ -271,7 +271,7 @@ input[type=submit]:hover {
   margin: auto;
   max-width: 550px;
   margin-top: 100px;
-  border-radius: 5px;
+  border-radius: 50% 20%/10% 40%;
   padding: 50px;
   animation: changeBg 9s infinite;
 }
