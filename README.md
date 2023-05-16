@@ -1,4 +1,4 @@
-*All of these are self-taught/learnt over tiring months...* (Without any help from anyone)
+*All of these are self-taught/learnt over tiring months...* (Without usage of any AI Tools, all self-taught/learnt)
 
 My first portfolio website project was a simple yet elegant personal website that I built using HTML, CSS, and JavaScript(Soon!). The website featured an "Skills" section that gave an overview of my background and skills, a portfolio section that showcased my previous projects and their descriptions, and a contact section that provided my contact information and a contact form for visitors to get in touch with me.
 
