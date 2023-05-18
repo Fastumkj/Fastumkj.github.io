@@ -51,8 +51,15 @@ nav .menu{
   border-radius: 10px;
   transition: all 0.2s ease;
 }
-.menu ul li a:hover,
+
+/*.menu ul li a:hover,
 .menu ul a.active{
+  background: none;
+  color: rgb(198, 123, 205);
+}*/
+
+.menu ul li a:hover,
+.menu ul li a.active:hover {
   background: none;
   color: rgb(198, 123, 205);
 }
